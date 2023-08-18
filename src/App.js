@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "./components/Header";
+import Header from "./component/Header";
 
 const initialFriends = [
   {
@@ -65,6 +65,8 @@ function App() {
           : friend
       )
     );
+
+    setSelectedFriend(null);
   }
 
   function handleDeleteFriend(id) {
